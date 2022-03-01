@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>DOM Example</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+
+      <div class="box-container">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+      </div>
+
+      <div class="btn-cont">
+        <button class="btn" id="btn1">click</button>
+        <button class="btn" id="btn2">add class</button>
+        <button class="btn" id="btn3">remove</button>
+
+        <button class="btn" id="btn4" style="background-color: red">
+          Reset
+        </button>
+      </div>
+    </div>
+
+    <div class="form-container">
+      <h1>FORM</h1>
+      <form onsubmit="onSubmit()" class="form" id="form">
+        <div class="flex">
+          <label for="initial">Inital</label>
+          <input type="number" name="initial" id="initial" />
+        </div>
+        <div class="flex">
+          <label for="final">Final</label>
+          <input type="number" name="final" id="final" />
+        </div>
+
+        <button id="submit" class="btn" type="submit">submit</button>
+        <button id="add" class="btn success" type="button">Add</button>
+        <button id="subtract" class="btn warn" type="button">Subtract</button>
+        <button id="reset" class="btn danger" type="button">Reset</button>
+
+        <div id="answer" class="result"></div>
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+<!-- 
+adding styling through JS hidding elements revealing window eventListener qu -->
